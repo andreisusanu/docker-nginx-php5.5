@@ -15,7 +15,7 @@ RUN apt-get update && \
     apt-get -y --force-yes --no-install-recommends install \
     supervisor \
     nginx \
-    php5-cli php5-fpm php5-common php5-mysql
+    php5-cli php5-fpm php5-common php5-mysql mysql-client-5.6
 
 # configure NGINX as non-daemon
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
